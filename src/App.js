@@ -9,8 +9,14 @@ import {
 
 } from "react-router-dom";
 
+
+
 export class App extends Component {
-  apiKey= 'faaa807f700f4a1a925a4443f1b08a0a'
+  
+apiKey =process.env.REACT_APP_NEWS_API
+ 
+
+ 
   state={
     progress:10
   }
@@ -23,6 +29,7 @@ export class App extends Component {
   render() {
     return (
       <div>
+     
         <Router>
         <Navbar/>
         <LoadingBar
